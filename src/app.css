@@ -12,6 +12,12 @@ main {
   margin: 0 auto;
 }
 
+main2 {
+  text-align: left;
+  padding: 1em;
+  margin: 0 auto;
+}
+
 h1 {
   color: #335d92;
   text-transform: uppercase;
@@ -19,7 +25,37 @@ h1 {
   font-weight: 100;
   line-height: 1.1;
   margin: 4rem auto;
-  max-width: 14rem;
+  /* max-width: 14rem; */
+}
+
+h4 {
+  color: #335d92;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.1;
+  margin: 4rem auto;
+  /* max-width: 14rem; */
+}
+
+.infoText {
+  color: #335d92;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 4rem auto;
+  /* max-width: 14rem; */
+}
+
+.footerText {
+  color: #335d92;
+  /* text-transform: uppercase; */
+  font-size: 0.5rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 4rem auto;
+  /* max-width: 14rem; */
 }
 
 p {

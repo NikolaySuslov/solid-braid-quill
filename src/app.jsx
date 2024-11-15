@@ -12,9 +12,10 @@ export default function App() {
       root={props => (
         <MetaProvider>
           <Title>Collaborative Quill Text Editor for SolidJS</Title>
+          <a href="/" target="_self">Index</a>
           <a href="/about" target="_self">About</a>
-          <a href={"/editor?k=" + Math.random().toString(36).substr(5)} target="_self">New Editor</a>
-          <a href={"/text?k=" + Math.random().toString(36).substr(5)} target="_self">New Textarea</a>
+          {/* <a href={"/editor?k=" + Math.random().toString(36).substr(5)} target="_self">New Editor</a>
+          <a href={"/text?k=" + Math.random().toString(36).substr(5)} target="_self">New Textarea</a> */}
           <Suspense>{props.children}</Suspense>
         </MetaProvider>
       )}
