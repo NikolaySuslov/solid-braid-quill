@@ -1,0 +1,33 @@
+{
+  "name": "solid-braid-quill",
+  "description": "Collaborative Quill Text Editor for SolidJS",
+  "version": "0.0.1",
+  "author": "Nikolay Suslov",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NikolaySuslov/solid-braid-quill"
+  },
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "version": "vinxi version"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.15.0",
+    "@solidjs/start": "^1.0.10",
+    "braid-http": "1.3.5",
+    "diamond-types-node": "1.0.2",
+    "quill": "^2.0.2",
+    "quill-cursors": "^4.0.3",
+    "solid-js": "^1.9.2",
+    "solid-quill": "^0.3.4",
+    "vinxi": "^0.4.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
