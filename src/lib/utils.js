@@ -64,7 +64,7 @@ export function apply_patches_and_update_selectionQ(textarea, patches) {
         offset += p.content.length;
     }
 
-    let original = textarea.getText();
+    let original = textarea.getText()//.replace(/\n$/, "")
     const qrange = textarea.getSelection();
     let sel = [qrange.index, qrange.index + qrange.length];
 

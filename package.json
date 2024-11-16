@@ -19,7 +19,7 @@
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.15.0",
     "@solidjs/start": "^1.0.10",
-    "braid-http": "1.3.5",
+    "braid-http": "1.3.8",
     "diamond-types-node": "1.0.2",
     "quill": "^2.0.2",
     "quill-cursors": "^4.0.3",

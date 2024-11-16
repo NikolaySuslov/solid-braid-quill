@@ -29,3 +29,4 @@ gitignore
 Thumbs.db
 
 /src/lib/braid-text/braid-text-db/*.*
+.vscode

@@ -45,6 +45,7 @@ export default function CodeEditor(props) {
   })
 
   let q;
+  let urlID = props.id ? props.id : "index"
   let url = "/api/braid-text/" + props.id
   let ava_url = "/api/braid-text/ava-" + props.id
 
@@ -153,12 +154,13 @@ export default function CodeEditor(props) {
             }
           }
         };
-        return q.getText();
+        return q.getText().replace(/\n$/, "")
       },
       generate_local_diff_update: (prev_state) => {
-        var patches = diff(prev_state, q.getText());
+        let rl = q.getText().replace(/\n$/, "")
+        var patches = diff(prev_state, rl);
         if (patches.length === 0) return null;
-        return { patches, new_state: q.getText() };
+        return { patches, new_state: rl };
       },
       on_error: (e) => {
         // texty.disabled = true
@@ -179,13 +181,17 @@ export default function CodeEditor(props) {
         body: JSON.stringify({ a: 'end', n: me })
       })
     })
-    q.keyboard.addBinding({
-      key: 13,  // Enter key
-      //shiftKey: true
-    }, function (range, context) {
-      q.insertText(range.index, '\n');
-      // q.setSelection(range.index + 1);
-    });
+    // const keyboard = q.getModule('keyboard');
+    // delete keyboard.bindings['Enter']; // HERE clear all Enter bindings
+
+//     q.keyboard.addBinding({
+//       key: 13,  // Enter key
+//       //shiftKey: true
+//     }, async function (range, context) {
+//        q.insertText(range.index, '\n');
+//        //q.setSelection(range.index + 1);
+// return true
+//     });
 
     q.keyboard.addBinding({
       key: 39,  // Right key

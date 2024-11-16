@@ -6,7 +6,7 @@ Glad to [SolidStart](https://start.solidjs.com/) fullstack platform, augmentatio
 
 ![](/public/demo.gif)
 
-## Demo app is running at https://editor.krestianstvo.org
+### Demo app is running at https://editor.krestianstvo.org
 
 To run the demo locally:
 
@@ -18,6 +18,9 @@ To run the demo locally:
 
 You can create isolated collaborative text areas specifying parameter in the url, like:  
 http://localhost:3000/editor?k=myText
+
+**Notes:** By defualt 1-2 Web browser windows or tabs running the demo per device should be ok. Google Chrome has a limit of Max parallel HTTP connections in a browser. So, if you have reached the maximum number of concurrent connections per host (browser suspensed). You should either keep less tabs open or increase the number of connection in your browser. On Firefox, you can tweak the preference network.http.max-persistent-connections-per-server in the about:config page.
+ 
 
 ## Developing
 
