@@ -5,7 +5,7 @@ import simpleton_client from '~/lib/simpleton-client'
 import { diff, apply_patches_and_update_selectionQ } from "~/lib/utils";
 import Quill from "quill";
 import { Range as QRange } from 'quill/core/selection.js';
-import { SolidQuill } from "solid-quill";
+import { SolidQuill } from "~/lib/solid-quill";
 import "quill/dist/quill.snow.css";
 import "./CodeEditor.css"
 import QuillCursors from 'quill-cursors';
