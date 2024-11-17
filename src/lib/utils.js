@@ -144,3 +144,12 @@ export const braidTestJSONHandler = (req, res) => {
     }
 
 }
+
+export async function copyLink() {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      console.log('Link copied to clipboard');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }

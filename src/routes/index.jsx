@@ -1,5 +1,6 @@
 import { Title } from "@solidjs/meta";
 import CodeEditor from "~/components/CodeEditor";
+import { copyLink } from "~/lib/utils";
 
 export default function Home() {
 
@@ -8,7 +9,10 @@ export default function Home() {
       <Title>Collaborative Quill Text Editor for SolidJS</Title>
       <h1>Collaborative Quill</h1>
       <h4>Local-first ready text editor</h4>
-      <a class="infoText" href={window.location.href} target="_blank">Open this editor in the new tab</a>
+      
+      <p>You can create own collaborative text editors/areas specifying id parameter in the url path. <br></br> Like this index page is actually contains the Editor: <a href="https://editor.krestianstvo.org/editor?k=1" target="_self">https://editor.krestianstvo.org/editor?k=1</a></p>
+
+      <a class="infoText" href="#" onclick={copyLink}>Copy current URL to clipboard for sharing</a>
       <p></p>
       <CodeEditor id="1" />
       <p>
